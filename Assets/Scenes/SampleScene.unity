@@ -135,8 +135,9 @@ GameObject:
   - component: {fileID: 395667372}
   - component: {fileID: 395667371}
   - component: {fileID: 395667370}
+  - component: {fileID: 395667374}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -220,6 +221,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &395667374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395667369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa27b66051c944742b0d1f43115d4360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attack: 5
+  _playerHealth: 100
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +523,7 @@ GameObject:
   - component: {fileID: 2118484582}
   - component: {fileID: 2118484581}
   - component: {fileID: 2118484580}
+  - component: {fileID: 2118484584}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -593,3 +609,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2118484584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118484579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d32c24085440f4e977adfbdeb6eb2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: Red
+  _health: 0
+  _XPpoints: 10
