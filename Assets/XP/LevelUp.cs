@@ -9,7 +9,8 @@ public class LevelUp : MonoBehaviour
     [Header("Experience")]
     [SerializeField] AnimationCurve experienceCurve;
 
-    int currentLevel, totalExperience;
+    int currentLevel = 1; 
+    int totalExperience;
     int previousLevelsExperience, nextLevelsExperience;
 
     [Header("Interface")]
@@ -38,7 +39,7 @@ public class LevelUp : MonoBehaviour
 
     void CheckForLevelUp()
     {
-        if(totalExperience >= nextLevelsExperience)
+        if (currentLevel < 5 && totalExperience >= nextLevelsExperience)
         {
             currentLevel++;
             UpdateLevel();
