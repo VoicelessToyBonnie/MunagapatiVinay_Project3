@@ -10,4 +10,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     private int _playerHealth = 100;
 
+    public void IncreaseStats()
+    {
+        _attack += 2; 
+        _playerHealth += 20;
+    }
 }
