@@ -17,6 +17,9 @@ public class LevelUp : MonoBehaviour
     [SerializeField] TextMeshProUGUI levelText;
     [SerializeField] Image experienceFill;
 
+    [Header("Player Reference")]
+    [SerializeField] Player player;
+
     void Start()
     {
         UpdateLevel();
@@ -42,6 +45,7 @@ public class LevelUp : MonoBehaviour
         if (currentLevel < 5 && totalExperience >= nextLevelsExperience)
         {
             currentLevel++;
+            player.IncreaseStats();
             UpdateLevel();
         }
     }

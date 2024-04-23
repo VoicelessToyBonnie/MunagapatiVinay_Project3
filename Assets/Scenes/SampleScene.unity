@@ -202,6 +202,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   levelText: {fileID: 524719259}
   experienceFill: {fileID: 148497598}
+  player: {fileID: 395667374}
 --- !u!114 &7323448
 MonoBehaviour:
   m_ObjectHideFlags: 0
