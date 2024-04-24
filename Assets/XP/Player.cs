@@ -15,4 +15,14 @@ public class Player : MonoBehaviour
         _attack += 2; 
         _playerHealth += 20;
     }
+
+    public int GetAttack()
+    {
+        return _attack;
+    }
+
+    public int GetHealth()
+    {
+        return _playerHealth;
+    }
 }

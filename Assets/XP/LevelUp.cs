@@ -16,6 +16,8 @@ public class LevelUp : MonoBehaviour
     [Header("Interface")]
     [SerializeField] TextMeshProUGUI levelText;
     [SerializeField] Image experienceFill;
+    [SerializeField] TextMeshProUGUI healthText;
+    [SerializeField] TextMeshProUGUI strengthText;
 
     [Header("Player Reference")]
     [SerializeField] Player player;
@@ -64,5 +66,7 @@ public class LevelUp : MonoBehaviour
 
         levelText.text = currentLevel.ToString();
         experienceFill.fillAmount = (float)start / (float)end;
+        healthText.text = player.GetHealth().ToString();
+        strengthText.text = player.GetAttack().ToString();
     }
 }
